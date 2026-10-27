@@ -1,0 +1,9 @@
+{
+  "id": "smowl-extension",
+  "name": "SMOWL Proctoring Companion",
+  "version": "1.2.0",
+  "author": "Richfield IT Services",
+  "description": "Richfield official SMOWL exam lock-down bridge and environment integrity monitor.",
+  "permissions": ["camera", "microphone", "display-capture", "lockdown"],
+  "homepage": "https://richfield.ac.za"
+}

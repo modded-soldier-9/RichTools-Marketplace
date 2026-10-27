@@ -1,0 +1,272 @@
+{
+  "$schema": "./schema.json",
+  "version": "1.0.0",
+  "name": "RichTools Student & Developer Marketplace",
+  "description": "Official marketplace catalog for student developer tools, environment runtimes, productivity suites, and Richfield community extensions.",
+  "lastUpdated": "2026-10-27T21:00:00Z",
+  "homepage": "https://github.com/modded-soldier-9/RichTools-Marketplace",
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Items",
+      "description": "Browse all student development tools, packages, and extensions"
+    },
+    {
+      "id": "devtools",
+      "name": "Developer Tools",
+      "description": "Code editors, compilers, version control, and containerization runtimes"
+    },
+    {
+      "id": "productivity",
+      "name": "Productivity & Office",
+      "description": "Essential suites, document editors, and academic communication tools"
+    },
+    {
+      "id": "datascience",
+      "name": "Data Science & AI",
+      "description": "Python data science distributions, Jupyter environments, and ML packages"
+    },
+    {
+      "id": "extensions",
+      "name": "Richfield Extensions",
+      "description": "Verified student plugins, exam companions, and academic helpers"
+    }
+  ],
+  "tools": [
+    {
+      "id": "vscode",
+      "name": "Visual Studio Code",
+      "description": "Streamlined code editor with debugging, task running, version control, and rich extension ecosystem.",
+      "category": "Developer Tools",
+      "categoryId": "devtools",
+      "author": "Microsoft Corporation",
+      "iconKey": "IconCode",
+      "latestVersion": "1.94.2",
+      "wingetPackageId": "Microsoft.VisualStudioCode",
+      "marketplaceUrl": "https://code.visualstudio.com/",
+      "downloadUrl": "https://code.visualstudio.com/Download",
+      "isVerified": true,
+      "featured": true,
+      "tags": ["editor", "code", "typescript", "c#", "python", "git"],
+      "subActions": [
+        {
+          "name": "Launch VS Code",
+          "pathOrCommand": "Code.exe",
+          "description": "Start Visual Studio Code workstation"
+        },
+        {
+          "name": "Install Python Extension",
+          "pathOrCommand": "code --install-extension ms-python.python",
+          "description": "Add Python language intelligence & debugger"
+        },
+        {
+          "name": "Install C# Dev Kit",
+          "pathOrCommand": "code --install-extension ms-dotnettools.csdevkit",
+          "description": "Add .NET and C# IDE capabilities"
+        }
+      ]
+    },
+    {
+      "id": "office",
+      "name": "Microsoft 365 (Office)",
+      "description": "Enterprise academic productivity suite including Word, Excel, PowerPoint, OneNote, and Outlook for students.",
+      "category": "Productivity & Office",
+      "categoryId": "productivity",
+      "author": "Microsoft Corporation",
+      "iconKey": "IconOffice",
+      "latestVersion": "16.0.17928.20156",
+      "wingetPackageId": "Microsoft.Office",
+      "marketplaceUrl": "https://www.office.com/",
+      "downloadUrl": "https://portal.office.com",
+      "isVerified": true,
+      "featured": true,
+      "tags": ["word", "excel", "powerpoint", "outlook", "notes"],
+      "subActions": [
+        {
+          "name": "Microsoft Word",
+          "pathOrCommand": "WINWORD.EXE",
+          "description": "Academic document processing & essay writing"
+        },
+        {
+          "name": "Microsoft Excel",
+          "pathOrCommand": "EXCEL.EXE",
+          "description": "Spreadsheet calculations, statistics, & charts"
+        },
+        {
+          "name": "Microsoft PowerPoint",
+          "pathOrCommand": "POWERPNT.EXE",
+          "description": "Slide presentations & lectures"
+        },
+        {
+          "name": "Microsoft Outlook",
+          "pathOrCommand": "OUTLOOK.EXE",
+          "description": "Student email & campus schedule"
+        }
+      ]
+    },
+    {
+      "id": "anaconda",
+      "name": "Anaconda Distribution",
+      "description": "Comprehensive open-source Python and R data science platform featuring Conda package management and JupyterLab.",
+      "category": "Data Science & AI",
+      "categoryId": "datascience",
+      "author": "Anaconda, Inc.",
+      "iconKey": "IconAnaconda",
+      "latestVersion": "2026.07-1",
+      "wingetPackageId": "Anaconda.Anaconda3",
+      "marketplaceUrl": "https://www.anaconda.com/",
+      "downloadUrl": "https://www.anaconda.com/download",
+      "isVerified": true,
+      "featured": true,
+      "tags": ["python", "jupyter", "pandas", "numpy", "machine learning"],
+      "subActions": [
+        {
+          "name": "Anaconda Navigator",
+          "pathOrCommand": "anaconda-navigator.exe",
+          "description": "Graphical interface for packages and virtual environments"
+        },
+        {
+          "name": "JupyterLab Notebook",
+          "pathOrCommand": "jupyter-lab.exe",
+          "description": "Interactive web-based data science workspace"
+        },
+        {
+          "name": "Anaconda Prompt",
+          "pathOrCommand": "cmd.exe /k",
+          "description": "Conda environment command line"
+        }
+      ]
+    },
+    {
+      "id": "git",
+      "name": "Git for Windows",
+      "description": "Distributed version control system providing Git Bash, Git GUI, and Shell integration for student repositories.",
+      "category": "Developer Tools",
+      "categoryId": "devtools",
+      "author": "Git Community",
+      "iconKey": "IconCode",
+      "latestVersion": "2.46.2",
+      "wingetPackageId": "Git.Git",
+      "marketplaceUrl": "https://git-scm.com/",
+      "downloadUrl": "https://git-scm.com/download/win",
+      "isVerified": true,
+      "featured": false,
+      "tags": ["version control", "vcs", "github", "bash", "cli"],
+      "subActions": [
+        {
+          "name": "Git Bash",
+          "pathOrCommand": "git-bash.exe",
+          "description": "Bash terminal emulation with Git CLI"
+        },
+        {
+          "name": "Git GUI",
+          "pathOrCommand": "git-gui.exe",
+          "description": "Visual commit and branch management tool"
+        }
+      ]
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js (LTS)",
+      "description": "JavaScript runtime built on Chrome's V8 engine with NPM package manager for web development courses.",
+      "category": "Developer Tools",
+      "categoryId": "devtools",
+      "author": "OpenJS Foundation",
+      "iconKey": "IconToolbox",
+      "latestVersion": "20.18.0",
+      "wingetPackageId": "OpenJS.NodeJS.LTS",
+      "marketplaceUrl": "https://nodejs.org/",
+      "downloadUrl": "https://nodejs.org/en/download",
+      "isVerified": true,
+      "featured": false,
+      "tags": ["javascript", "typescript", "npm", "server", "web"],
+      "subActions": [
+        {
+          "name": "Node REPL",
+          "pathOrCommand": "node.exe",
+          "description": "Interactive JavaScript terminal shell"
+        }
+      ]
+    },
+    {
+      "id": "postman",
+      "name": "Postman API Platform",
+      "description": "API client for designing, testing, and debugging REST, GraphQL, and WebSocket endpoints in software engineering courses.",
+      "category": "Developer Tools",
+      "categoryId": "devtools",
+      "author": "Postman, Inc.",
+      "iconKey": "IconCloud",
+      "latestVersion": "11.16.0",
+      "wingetPackageId": "Postman.Postman",
+      "marketplaceUrl": "https://www.postman.com/",
+      "downloadUrl": "https://www.postman.com/downloads/",
+      "isVerified": true,
+      "featured": false,
+      "tags": ["api", "rest", "http", "testing", "backend"],
+      "subActions": [
+        {
+          "name": "Launch Postman",
+          "pathOrCommand": "Postman.exe",
+          "description": "Open API testing and documentation suite"
+        }
+      ]
+    },
+    {
+      "id": "smowl-extension",
+      "name": "SMOWL Proctoring Companion",
+      "description": "Official Richfield integration bridge for secure online exam monitoring, camera verification, and lock-down testing.",
+      "category": "Richfield Extensions",
+      "categoryId": "extensions",
+      "author": "Richfield IT Services",
+      "iconKey": "IconLock",
+      "latestVersion": "1.2.0",
+      "wingetPackageId": "",
+      "marketplaceUrl": "https://richfield.ac.za/student-portal",
+      "downloadUrl": "https://github.com/modded-soldier-9/RichTools-Marketplace/raw/main/extensions/smowl-proctoring/manifest.json",
+      "isVerified": true,
+      "featured": true,
+      "tags": ["richfield", "exam", "smowl", "security", "proctoring"],
+      "subActions": [
+        {
+          "name": "Check Hardware Diagnostics",
+          "pathOrCommand": "ms-settings:privacy-webcam",
+          "description": "Verify webcam & microphone privacy permissions for SMOWL"
+        }
+      ]
+    },
+    {
+      "id": "richfield-moodle-enhancer",
+      "name": "Richfield Moodle Productivity Companion",
+      "description": "Custom student enhancement plugin adding dark mode, assignment deadline reminders, and quick download accelerators.",
+      "category": "Richfield Extensions",
+      "categoryId": "extensions",
+      "author": "Richfield Student Developer Club",
+      "iconKey": "IconGraduationCap",
+      "latestVersion": "2.1.0",
+      "wingetPackageId": "",
+      "marketplaceUrl": "https://github.com/modded-soldier-9/RichTools-Marketplace/tree/main/extensions/moodle-enhancer",
+      "downloadUrl": "https://github.com/modded-soldier-9/RichTools-Marketplace/raw/main/extensions/moodle-enhancer/manifest.json",
+      "isVerified": true,
+      "featured": true,
+      "tags": ["moodle", "assignments", "dark-mode", "student", "productivity"],
+      "subActions": []
+    },
+    {
+      "id": "richfield-gpa-tracker",
+      "name": "Richfield GPA & Assessment Tracker",
+      "description": "Offline-capable module assessment tracker with weighted grade calculators aligned to official Richfield faculties.",
+      "category": "Richfield Extensions",
+      "categoryId": "extensions",
+      "author": "Richfield Faculty of IT",
+      "iconKey": "IconLibrary",
+      "latestVersion": "1.0.4",
+      "wingetPackageId": "",
+      "marketplaceUrl": "https://github.com/modded-soldier-9/RichTools-Marketplace/tree/main/extensions/gpa-calculator",
+      "downloadUrl": "https://github.com/modded-soldier-9/RichTools-Marketplace/raw/main/extensions/gpa-calculator/manifest.json",
+      "isVerified": true,
+      "featured": false,
+      "tags": ["gpa", "grades", "assessments", "faculties", "tracker"],
+      "subActions": []
+    }
+  ]
+}

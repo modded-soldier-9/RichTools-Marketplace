@@ -1,0 +1,9 @@
+{
+  "id": "richfield-moodle-enhancer",
+  "name": "Richfield Moodle Productivity Companion",
+  "version": "2.1.0",
+  "author": "Richfield Student Developer Club",
+  "description": "Productivity plugin adding modern dark mode, auto grade calculators, and lecture file batching.",
+  "permissions": ["storage", "activeTab"],
+  "homepage": "https://moodle.richfield.ac.za"
+}

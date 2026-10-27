@@ -1,0 +1,9 @@
+{
+  "id": "richfield-gpa-tracker",
+  "name": "Richfield GPA & Assessment Tracker",
+  "version": "1.0.4",
+  "author": "Richfield Faculty of IT",
+  "description": "Assessment grade tracker with weighted module GPA calculations per official Richfield handbook.",
+  "permissions": ["storage"],
+  "homepage": "https://richfield.ac.za"
+}

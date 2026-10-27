@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RichTools Marketplace Catalog Schema",
+  "type": "object",
+  "required": ["version", "name", "categories", "tools"],
+  "properties": {
+    "version": { "type": "string" },
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "lastUpdated": { "type": "string", "format": "date-time" },
+    "homepage": { "type": "string", "format": "uri" },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description", "category", "categoryId"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "category": { "type": "string" },
+          "categoryId": { "type": "string" },
+          "author": { "type": "string" },
+          "iconKey": { "type": "string" },
+          "latestVersion": { "type": "string" },
+          "wingetPackageId": { "type": "string" },
+          "marketplaceUrl": { "type": "string" },
+          "downloadUrl": { "type": "string" },
+          "isVerified": { "type": "boolean" },
+          "featured": { "type": "boolean" },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "subActions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "pathOrCommand"],
+              "properties": {
+                "name": { "type": "string" },
+                "pathOrCommand": { "type": "string" },
+                "description": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
